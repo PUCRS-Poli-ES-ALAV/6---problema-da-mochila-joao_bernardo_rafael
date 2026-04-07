@@ -1,3 +1,10 @@
+//Classe que resolve o problema da mochila usando forca bruta sem programacao dinamica
+//Estrategia bruta (nao otimizada): testa TODAS as combinacoes possiveis de inclusao/exclusao de itens
+//Complexidade exponencial O(2^N) pois cada item tem 2 opcoes (incluir ou nao incluir)
+//Usa bitmask para representar quais itens estao selecionados na melhor solucao
+//Vantagem: codigo direto, encontra solucao exata testando todas as opcoes
+//Desvantagem: MUITO lento para muitos itens pois explora todas as 2^N combinacoes possiveis
+//Util para problemas pequenos, inviavel quando N eh grande (mais de 20-30 itens)
 public class Mochila {
 
     //classe para guardar peso e valor de cada item

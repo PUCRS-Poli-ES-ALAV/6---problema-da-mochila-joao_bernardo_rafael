@@ -1,3 +1,10 @@
+//Classe que resolve o problema da mochila usando programacao dinamica
+//Programacao dinamica (otimizada): monta uma tabela armazenando melhores solucoes para subproblemas
+//Complexidade polinomial O(N*C) onde N eh numero de itens e C eh capacidade da mochila (muito mais rapido)
+//Tabela[i][j] guarda o valor maximo obtido considerando os primeiros i itens com capacidade j
+//Vantagem: execucao rapida mesmo para muitos itens, resolve problemas de tamanho realista
+//Desvantagem: precisa de memoria extra para armazenar a tabela O(N*C), nao rastreia itens automaticamente
+//Pratico e eficiente para problemas reais com muitos itens
 public class MochilaPD {
     //classe para guardar peso e valor de cada item
     public static class Item {

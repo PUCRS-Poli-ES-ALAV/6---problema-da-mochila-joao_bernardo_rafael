@@ -1,3 +1,10 @@
+//Classe que resolve o problema de distancia de edicao usando programacao dinamica
+//Programacao dinamica (otimizada): monta uma tabela armazenando resultados intermediarios para reutilizar
+//Complexidade polinomial O(m*n) onde m e n sao os tamanhos das strings (muito mais rapido que bruta)
+//Tabela[i][j] guarda a distancia minima entre os primeiros i caracteres de A e j caracteres de B
+//Vantagem: execucao rapida mesmo para strings grandes, reutiliza calculos ja feitos
+//Desvantagem: precisa de memoria extra para armazenar a tabela, codigo um pouco mais complexo
+//Pratico e eficiente para problemas reais
 public class DistanciaEdicao {
     //contador de iteracoes DP
     private static long iteracoesDP;
